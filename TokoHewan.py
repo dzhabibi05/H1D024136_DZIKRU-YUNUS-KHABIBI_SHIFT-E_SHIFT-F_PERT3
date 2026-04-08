@@ -51,9 +51,9 @@ system.input['profit'] = 3500000
 
 system.compute()
 print(system.output['stok_makanan'])
-barang_terjual.view()
-permintaan.view()
-harga_peritem.view()
-profit.view()
+#*barang_terjual.view()
+#permintaan.view()
+#harga_peritem.view()
+#profit.view()
 stok_makanan.view(sim=system)
 input("Tekan ENTER untuk melanjutkan")

@@ -2,6 +2,7 @@
 import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
+import matplotlib.pyplot as plt
 
 #Menyiapkan himpunan fuzzy
 kejelasan_informasi = ctrl.Antecedent(np.arange(0, 101, 1), 'kejelasan_informasi')
@@ -151,6 +152,5 @@ kepuasan_sim.input["ketersediaan_sarpras"] = 90
 kepuasan_sim.compute()
 kepuasan_pelayanan.view(sim=kepuasan_sim)
 hasil = kepuasan_sim.output["kepuasan_pelayanan"]
-print("output:", hasil)
-import matplotlib.pyplot as plt 
+print(hasil)
 plt.show()
